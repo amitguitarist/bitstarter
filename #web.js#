@@ -10,11 +10,10 @@ fs.readFile('index.html','utf-8',function (err,data){
 //var bufcontent  = new Buffer();
 var bufcontent = fs.readFileSync('index.html');
 var len = bufcontent.length;
-
 console.log(bufcontent.toString('utf8',0,len));
 
 
-/*
+
 var express = require('express');
 var app = express();
 app.use(express.logger());
@@ -28,6 +27,6 @@ app.listen(port, function() {
   console.log("Listening on " + port);
 });
 
-*/
+
 
 
